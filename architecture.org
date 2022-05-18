@@ -50,11 +50,10 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 - Anticipa el fracaso. Prueba tus escenario sde falla y valida su entendimiento y su impacto.
 - Aprende de todas las fallas operacionales. 
 ** Mejores prácticas
-Hay cuatro áreas de mejores prácticas para la excelencia operacional en la nube
-*** Organización
-*** Preparación
-*** Operación
-*** Evolución
+- Organización
+- Preparación
+- Operación
+- Evolución
 
 * Seguridad
 
@@ -67,20 +66,20 @@ Hay cuatro áreas de mejores prácticas para la excelencia operacional en la nub
 - Prepárate para incidentes de seguridad.
 
 ** Mejores prácticas
-*** Seguridad
-*** Identity y Access Management
-*** Detection
-*** Protección de Infraestructura
-*** Data Protection
-*** Respuesta a incidentes
+- Seguridad
+- Identity y Access Management
+- Detection
+- Protección de Infraestructura
+- Data Protection
+- Respuesta a incidentes
 
 * Confiabilidad
 ** Principios de diseño
-*** Recupérate automáticamente de las fallas.
-*** Pureba procedimientos de recupearación.
-*** Escala horizontalmente para incrementar la disponibilida de las cargas de trabajo
-*** Deja de adivinar la capacidad que requieres.
-*** Gestiona el cambio con la automatización.
+- Recupérate automáticamente de las fallas.
+- Pureba procedimientos de recupearación.
+- Escala horizontalmente para incrementar la disponibilida de las cargas de trabajo
+- Deja de adivinar la capacidad que requieres.
+- Gestiona el cambio con la automatización.
 
 ** Mejores prácticas
 - Foundations. ¿Cómo manejas las cuotas de servicio y las limitaciones? ¿Cómo planeas la topología de tu red?
