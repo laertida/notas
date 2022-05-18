@@ -1,0 +1,10 @@
+#+TITLE: Servidores de aplicación (Web servers)
+
+¿Qué es un webserver?
+Un software que permite gestionar las peticiones HTTP
+
+¿Qué ventajas tiene utilizar un webserver ?
+
+¿Cuáles son los servidres más utilizados ? 
+
+¿Qué es nginx?

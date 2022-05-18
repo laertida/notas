@@ -1,0 +1,36 @@
+#+TITLE: AWS Well-Architected
+#+LANGUAGE: es
+#+OPTIONS:
+* Las preguntas iniciales
+
+- ¿Cómo puedo saber si la arquitectura de mi infraestructura está bien hecha?
+- ¿Cuáles son los criterios que debo tomar en cuenta para responder esta pregunta?
+
+* AWS Well-Architetcted Framework
+
+Ayuda a comprender las ventajas y desventajas de las decisiones que toma cuando crea sistemas en AWS. Mediante el uso del marco, aprenderá las prácticas recomendadas de arquitectura para diseñar y operar sistemas en la nube seguros, fiables, eficientes y rentables. [fn:1]
+
+* Los pilares
+
+| Nombre                    | Descripción                                                                                                                                                                                                                               |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Excelencia Operativa      | La capacidad de soportar el desarrollo y ejecutar cargas de trabajo de manera eficaz, obtener información acerca de las operaciones y mejorar continuamente admitiendo procesos y procedimientos para ofrecer valor de negocio.           |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Seguridad                 | Abarca la capacidad para proteger los datos, sistemas y activos.                                                                                                                                                                          |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fiabilidad                | La habilidad de que una carga de trabajo lleve a cabo la función prevista, de forma correcta y consistente en el momento esperado. Esto incluye la capacida de operar y probar la carga de trabajo a través de su ciclo de vida completo. |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Eficiencia de rendimiento | La abilidad de utilizar recursos informáticos de manera eficiente para cumplir con los requisitos del sistema y mantener esa eficiencia a medida que la demanda cambia y la tecnología evoluciona.                                        |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Optimización de costos    | La capacidad de ejecutar sistemas para entregar valor de negocio al menor precio                                                                                                                                                          |
+|---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sostenibilidad            | La habilidad de mejorar continuamente la sustentabilidad impacta en la reducción de energía incrementando la eficacia a través de todos los componentes de una carga de trabajo al maximizar los beneficios de los recursos proveídos y minimizando el total de los recursos requeridos. |
+
+- *Carga de trabajo* (workload): Un conjunto de componentes que juntos entregan valor de negocio. 
+
+El trabajo del arquitecto es sopesar entre estos pilares de acuerdo a las necesidades del negocio.
+
+
+* Footnotes
+
+[fn:1] [[https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html][AWS Well-Architected Framework]] - https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html

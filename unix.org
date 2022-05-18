@@ -1,0 +1,59 @@
+#+TITLE: Sistemas operativos basados en Unix
+#+OPTIONS: toc:nil num:2
+* En el principio todo era chaos
+** Lenguaje ensamblador -.-
+** Programas específicos para un hardware específico.
+
+* 1969 - Se creó UNIX y se creó C 
+- Software privado, bajo licencia de copyright.
+- Todo es un archivo  
+** Kernel
+** Shell
+** Utilities
+* 1984 - GNU / 1991 - Linux 
+** GNU - GNU is not Uinux
+*** principios
+- La libertad de ejecutar el programa como lo desee, con cualquier propósito (libertad 0).
+- La libertad de estudiar el funcionamiento del programa y modificarlo de modo que realice las tareas como usted desee (libertad 1). El acceso al código fuente es un prerrequisito para esto.
+- La libertad de redistribuir copias para ayudar a los demás (libertad 2).
+- La libertad de distribuir copias de sus versiones modificadas a otras personas (libertad 3). Al hacerlo da a toda la comunidad la oportunidad de beneficiarse de sus cambios. El acceso al código fuente es un prerrequisito para esto.
+*** fundationals
+- gcc
+- make
+*** shell
+- bash
+*** Utilities:
+- coreutils (cat, cp, mkdir, pwd, touch)
+- emacs
+- nano
+- grep
+** Linux - Linus Torvalds
+*** Minix
+*** Linux
+* Distribuciones de Linux
+** Utilidades base
+- Gestor de arrange (GRUB)
+- Init Manager (rc / systemd )
+- Gestores de red (dhcp - iw )
+** Kernel
+- Linux
+** Programas disponibles
+- coreutils
+- nano
+** Gestor de paquetes
+- apt 
+- yum 
+- pacman
+- emerge
+** Entorno de escritorio
+- Gnome!
+- KDE
+- XFCE
+* Las familias más usadas
+** debian -> ubuntu
+** redhat
+** centos
+** android
+* ¿Qué tiene que ver docker con linux?
+- Kernel - Host
+- distribuciones 

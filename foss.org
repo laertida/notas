@@ -1,0 +1,36 @@
+#+TITLE: FOSSL: Free and Open Source Software Licenses
+
+* Licencias de uso
+1. Se puede usar el software pero no se puede modificar, no se tiene acceso al código fuente, únicamente a los archivos binarios.
+2. No se puede transferir Ex. Si tú compras una licencia, no puedes compartirla a otra persona.
+3. Hay que pagar el derecho para el uso de esta licencia. 
+
+- Windows
+- Juegos
+- Photoshop / Illustrator
+
+* Open Source
+1. Código es abierto. El código fuente que ejecutas es visible para quien usa el software, sin embargo, no necesariamente quien lo usa lo puede modificar.
+2. En algunas ocasiones, se debe pagar licencias del uso del software.
+3. El software no se puede copiar, modificar o distribuir. 
+
+- Magento -> Es una plataforma de comercio electrónico, open source, pero debes pagar licencia para usar software.
+- RedHat -> Distribución de linux
+
+* Free Software 
+** GPL2
+1. La libertad de ejecutar el programa como lo desee, con cualquier propósito (libertad 0).
+2. La libertad de estudiar el funcionamiento del programa y modificarlo de modo que realice las tareas como usted desee (libertad 1)
+3. La libertad de redistribuir copias para ayudar a los demás (libertad 2).
+** GPL3
+Todas las anteriores, pero el usuario que modifique el código fuente, está obligado a distribuir las modificaciones que realizó al software.
+
+* Tipos de licencias
+** Apache  * MIT 
+- Tomar el código fuente, modificarlo, usarlo y es posible darle un uso comercial
+  Tú puedes tomar el código de  Apache Server, modificarlo, y vender las modificaciones con la licencia que tú quieras. 
+  - IBM HTTP Sever (IHS)
+
+
+
+
