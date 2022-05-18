@@ -31,6 +31,113 @@ Ayuda a comprender las ventajas y desventajas de las decisiones que toma cuando 
 El trabajo del arquitecto es sopesar entre estos pilares de acuerdo a las necesidades del negocio.
 
 
+Distribuir habilidades en equipos en  lugar de tener un área centralizada con esa capacidad, hay reisgos cuando tomas esa decisión, por ejemplo, asegurarse que los equipos sigan estándares internos. Se mitigan estos riesgos teniendo /prácticas/  (formas de hacer cosas, procesos, estándares y normas aceptadas ) y /mecanismos/ que permiten la revisión automática de asegurar que se cumplan los estándares. 
+
+** Principios generales de diseño
+
+- Deja de adivinar los recursos que necesitas.
+- Prueba los sistemas a escala productiva.
+- Automatiza para hacer la experimentación arquitectónica fácil.
+- Permite  evolucionar las arquitecturas.
+- Dirige tu aquitectura basada en datos.
+- Realiza mejoras a través de días de prueba (game days). 
+
+* Excelencia operativa
+** Principios  de diseño
+- Realiza operaciones como código
+- Has cambios reversibles, pequeños y frecuentes.
+- Redefine procedimientos operacionales frecuentemente. Organiza game days regulares para revisar y validar que todo los porocedimiento son efectivos y que los miembros del equipo están familiarizados con ellos.
+- Anticipa el fracaso. Prueba tus escenario sde falla y valida su entendimiento y su impacto.
+- Aprende de todas las fallas operacionales. 
+** Mejores prácticas
+Hay cuatro áreas de mejores prácticas para la excelencia operacional en la nube
+*** Organización
+*** Preparación
+*** Operación
+*** Evolución
+
+* Seguridad
+
+** Principios de diseño
+- Implementa una fuerte base de identidad. Identifica el principio de /"least privilege"/ y fomenta la separación de funciones con la autorización apropiadapara cada interacción con los recursos de AWS.
+- Habilita la trazabilidad: Monitorea, alerta y audit acciones y cambios en tus ambientes en tiempo real.
+- Aplica seguridad a todos los niveles. VPC, loadbalancing, cada instancia y sistema operativo.
+- Automatiza las mejores prácticas de seguridad.
+- Protege los datos en tránsito y el resto. DSP
+- Prepárate para incidentes de seguridad.
+
+** Mejores prácticas
+*** Seguridad
+*** Identity y Access Management
+*** Detection
+*** Protección de Infraestructura
+*** Data Protection
+*** Respuesta a incidentes
+
+* Confiabilidad
+** Principios de diseño
+*** Recupérate automáticamente de las fallas.
+*** Pureba procedimientos de recupearación.
+*** Escala horizontalmente para incrementar la disponibilida de las cargas de trabajo
+*** Deja de adivinar la capacidad que requieres.
+*** Gestiona el cambio con la automatización.
+
+** Mejores prácticas
+- Foundations. ¿Cómo manejas las cuotas de servicio y las limitaciones? ¿Cómo planeas la topología de tu red?
+- Arquitectura de las cargas de trabajo. ¿Cómo diseñas la arquitectura de servicio de tus cargas de trabajo? ¿Cómo diseñas las interacciones en un sistema distribuido para prevenir fallas? ¿Cómo diseñas las interacciones en un sistema distribuido para mitigar o resistir a al as fallas? 
+- Change management. ¿Cómo monitoreas los recursos de tus cargas de trabajo? ¿Cómo diseñas tu carga de trabajo para que se adapte a cambios bajo demanda? ¿Cómo implementas un cambio?
+- Gestión de las fallas. ¿Cómo respaldas tu informacion? ¿Cómo usas encapsulamiento de fallas para proteger tus cargas de trabajo? ¿Cómo diseñas tus cargas de trabajo para que tus componentes resistan a fallas? ¿Cómo pruebas la tu confiabilidad? ¿Cómo prueas tu confiabilidad? ¿Cómo planeas tu DRP?
+
+* Eficiencia en redimiento
+** Principios de diseño
+- Democratica tecnologías avanzadas.
+- Lanza globalmente en minutos
+- Usa arquitecturas serverless
+- Experimenta seguido
+- Busca simpatía mecánica. Siempre usa la solución tecnológica que mejor se ajuste con los objetivos de tu carga de trabajo.
+
+** Mejores prácticas
+- Selección. ¿Cómo seleccionas la arquitectura de mejor rendimiento?
+- Revisión. ¿Cómo evolucionas tu carga de trabajo para obtener mejoras de nuevos releases?
+- Monitoreo. ¿Cómo monitoreas tus recursos para asegurarte de que tienen un buen rendimiento?
+- Tradeoff. ¿Cómo utilizas los tradeoff para mejorar tu rendimiento?
+
+* Optimización de costos
+
+** Principios de diseño
+- Implementa el manejo financiero de la nube.
+- Adopta un modelo de consumo. Paga sólo por los recursos computacionales que usas.
+- Mide la eficacia
+- No gastes dinero en tareas pesadas (heavy lifting)
+- Analiza y atribuye gastos
+  
+** Mejores prácticas
+
+- Practica el manejo financiero de la nube
+- Concientiza el gasto y el uso
+- Recursos Costo/Eficacia
+- Gestiona la demanda y provisionamiento de recursos
+- Optimiza conforme pase el tiempo
+
+* Sustentabilidad
+
+** Principios de diseño
+- Comprende tu impacto
+- Establece tus metas de sostenibilidad
+- Maximiza tu utilización de recursos
+- Anticipa y adopta nuevo las ofertas de software más eficientes
+- Usa servicios manejados. - Cloud
+- Reduce el impacto posterior de sus cargas de tabajo en la nube.
+
+** Mejores prácticas
+- Selección de región. ¿Cómo seleccionas las regiones para apoyar tus metas de sustentabilidad?
+- Behavior patterns. ¿Cómo usas los patrones de comportamiento de tus usuarios para soportar tus metas de sustentabilidad
+- Software y patrones de arquitectura.
+- Patrones de datos
+- Patrones de Hardware
+- Patrones de desarrollo
+
+
 * Footnotes
 
 [fn:1] [[https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html][AWS Well-Architected Framework]] - https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html
