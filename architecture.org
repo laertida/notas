@@ -4,7 +4,7 @@
 * Las preguntas iniciales
 
 - ¿Cómo puedo saber si la arquitectura de mi infraestructura está bien hecha?
-- ¿Cuáles son los criterios que debo tomar en cuenta para responder esta pregunta?
+- ¿Cómo usamos el AWS Well-Arquitected Framework?
 
 * AWS Well-Architetcted Framework
 
@@ -44,22 +44,43 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 
 * Excelencia operativa
 ** Principios  de diseño
-- Realiza operaciones como código
+- Realiza operaciones como código.
 - Has cambios reversibles, pequeños y frecuentes.
-- Redefine procedimientos operacionales frecuentemente. Organiza game days regulares para revisar y validar que todo los porocedimiento son efectivos y que los miembros del equipo están familiarizados con ellos.
+- Redefine procedimientos operacionales frecuentemente. Organiza /game days/ regulares para revisar y validar que todo los porocedimiento son efectivos y que los miembros del equipo están familiarizados con ellos.
 - Anticipa el fracaso. Prueba tus escenario sde falla y valida su entendimiento y su impacto.
 - Aprende de todas las fallas operacionales. 
-** Mejores prácticas
-- Organización
-- Preparación
-- Operación
-- Evolución
+** Áreas de mejores prácticas
 
+- Organización
+  El equipo dete tener un conocimiento compartido de las metas del negocio.
+  Prioridades bien definidas maximizan el beneficio de tus esfuerzos.
+  Evalua los las amenazas y evalúa el impacto de los riesgos.
+  El equipo debe tener claro su rol y su impacto en las metas del negocio.
+  Respalda a los miembros del equipo de tal forma que tomen acciones y apoyen los beneficios de tu negocio.
+  Fomenta la experimentación para acelerar el aprendizaje y mantener a los miembros del equipo involucrados.
+  Mantente al tanto de las regulaciones externas que aplican a tu organización. 
+
+- Preparación
+  Tienes que entender tus cargas de trabajo y su comportamiento esperado.
+  Diseña tu carga de trabajo que provea la información necesaria para conocer su estado.
+  Adopta prácticas que mejoren el flujo de cambios a producción y que habiliten la refactorización, retroalimentación rápida sobre la calidad y resolución de bugs.
+  
+- Operación
+  Una operación exitosa es medida por el logro de las metas de negocio y del cliente. Define los resultados esperados y determina cómo será medido este éxito.
+  Una operación saludable incluye cargas de trabajo saludables y actividades de operacion saludables (deployment y respuesta a incidencias).
+  Un manejo efectivo y eficiente es necesario para alcanzar la excelencia operativa. (Priorizar, establecer runbooks, estabelce alertas).
+  Comunica el estatus operacional de tus cargas de trabajo mediante dashboards
+  
+- Evolución
+  Debes aprender, compartir y mejorar continuamente mejorar para mantener tu excelencia operativa. Cambios continuos y mejoras incrementales. Post-incident análisis de todos los eventos que impactan al cliente.
+  Incluye sesiones de feedback en tus procedimientos para identificar rápidamente áreas de mejora y obneter.
+  
+  
 * Seguridad
 
 ** Principios de diseño
-- Implementa una fuerte base de identidad. Identifica el principio de /"least privilege"/ y fomenta la separación de funciones con la autorización apropiadapara cada interacción con los recursos de AWS.
-- Habilita la trazabilidad: Monitorea, alerta y audit acciones y cambios en tus ambientes en tiempo real.
+- Implementa una fuerte base de identidad. Identifica el principio de /least privilege/ y fomenta la separación de funciones con la autorización apropiadapara cada interacción con los recursos de AWS.
+- Habilita la trazabilidad: Monitorea, alerta y audita acciones y cambios en tus ambientes en tiempo real.
 - Aplica seguridad a todos los niveles. VPC, loadbalancing, cada instancia y sistema operativo.
 - Automatiza las mejores prácticas de seguridad.
 - Protege los datos en tránsito y el resto. DSP
@@ -67,11 +88,18 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 
 ** Mejores prácticas
 - Seguridad
+  Aplica todas las mejores prácticas de seguridad en cada ará de seguridad.
 - Identity y Access Management
-- Detection
+  Asegúrate qyue solo usuarios autenticados y autorizados sean capaces de acceder a tus recursos y sólo de la manera que se determine.
+- Detection.
+  Utiliza controles de detección para identificar amenazas de seguridad o incidentes. (Inventario de assets, internal auditing, procesamiento d elogs)
 - Protección de Infraestructura
-- Data Protection
+  Abarca metodologías de control, como la defenza en profundidad, necesarias para cumplir con las mejores prácticas y las obligaciones organizativas. 
+- Data Protection 
+  *Antes de diseñar una arquitectura* -> data classification
+    
 - Respuesta a incidentes
+  Aún con controles preventivos y de detección tu organización debe establecer procesos para responder y mitigar potenciales impactos a incidentes de seguridad. 
 
 * Confiabilidad
 ** Principios de diseño
@@ -82,11 +110,15 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 - Gestiona el cambio con la automatización.
 
 ** Mejores prácticas
-- Foundations. ¿Cómo manejas las cuotas de servicio y las limitaciones? ¿Cómo planeas la topología de tu red?
-- Arquitectura de las cargas de trabajo. ¿Cómo diseñas la arquitectura de servicio de tus cargas de trabajo? ¿Cómo diseñas las interacciones en un sistema distribuido para prevenir fallas? ¿Cómo diseñas las interacciones en un sistema distribuido para mitigar o resistir a al as fallas? 
-- Change management. ¿Cómo monitoreas los recursos de tus cargas de trabajo? ¿Cómo diseñas tu carga de trabajo para que se adapte a cambios bajo demanda? ¿Cómo implementas un cambio?
-- Gestión de las fallas. ¿Cómo respaldas tu informacion? ¿Cómo usas encapsulamiento de fallas para proteger tus cargas de trabajo? ¿Cómo diseñas tus cargas de trabajo para que tus componentes resistan a fallas? ¿Cómo pruebas la tu confiabilidad? ¿Cómo prueas tu confiabilidad? ¿Cómo planeas tu DRP?
-
+- Foundations.
+  Requerimientos de inicio que debe cumplir tu arquitectura. 
+- Arquitectura de las cargas de trabajo.
+  Una carga de trabajo confiable comienza con decisiones de diseño iniciales tanto para software como para infraestructura. (SOA, Microservices)
+- Change management.
+  Cambios en tu carga de trabajo o en su ambiente deben ser anticipados y acomodarse para alcanzar una operación confiable en la carga de trabajo. (Spikes in demand, feature deployments, security patches)
+- Gestión de las fallas. 
+  Tu carga de trabajo esté consciente de las fallas tan proto como estas ocurran y tomar acciones para evitar un impacto en la disponibilidad.
+  
 * Eficiencia en redimiento
 ** Principios de diseño
 - Democratica tecnologías avanzadas.
@@ -96,10 +128,18 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 - Busca simpatía mecánica. Siempre usa la solución tecnológica que mejor se ajuste con los objetivos de tu carga de trabajo.
 
 ** Mejores prácticas
-- Selección. ¿Cómo seleccionas la arquitectura de mejor rendimiento?
-- Revisión. ¿Cómo evolucionas tu carga de trabajo para obtener mejoras de nuevos releases?
-- Monitoreo. ¿Cómo monitoreas tus recursos para asegurarte de que tienen un buen rendimiento?
-- Tradeoff. ¿Cómo utilizas los tradeoff para mejorar tu rendimiento?
+- Selección.
+  La solución óptima para una carga de trabajo varía, y las soluciones regularmente combina diferentes aproximaciones.
+  - Cómputo. Instancias, Contenedores o Funciones.
+  - Storage. Object Storage, Block Storeage, File Storage. 
+  - Database. 
+  - Network. Bandwithd
+- Revisión.
+  Evalúa de forma contínua que los componentes de tu carga de trabajo estén utilizando las últimas tecnologías y se aproxime a mejorar continuamente el rendimiento.
+- Monitoreo.
+  Debes monitorear el performace de tus cargas de trabajo para poder remediar cualquier eventualidad antes de que impacte a tus clientes. 
+- Tradeoff.
+  Ej. consistencia o durabilidad, tiempo o espacio. 
 
 * Optimización de costos
 
@@ -111,12 +151,12 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 - Analiza y atribuye gastos
   
 ** Mejores prácticas
-
-- Practica el manejo financiero de la nube
-- Concientiza el gasto y el uso
+- Practica el manejo financiero de la nube. 
+- Concientiza el gasto y el uso.
+  La capacidad de attibuir costos por recursos para la organización o para los product owners conduce a un comportamiento de uso eficiente  y reducción de desperdicios.
 - Recursos Costo/Eficacia
-- Gestiona la demanda y provisionamiento de recursos
-- Optimiza conforme pase el tiempo
+- Gestiona la demanda y provisionamiento de recursos.
+- Optimiza conforme pase el tiempo.
 
 * Sustentabilidad
 
@@ -129,12 +169,23 @@ Distribuir habilidades en equipos en  lugar de tener un área centralizada con e
 - Reduce el impacto posterior de sus cargas de tabajo en la nube.
 
 ** Mejores prácticas
-- Selección de región. ¿Cómo seleccionas las regiones para apoyar tus metas de sustentabilidad?
-- Behavior patterns. ¿Cómo usas los patrones de comportamiento de tus usuarios para soportar tus metas de sustentabilidad
-- Software y patrones de arquitectura.
-- Patrones de datos
-- Patrones de Hardware
-- Patrones de desarrollo
+- Selección de región. 
+- Behavior patterns. 
+- Patrones de software y arquitectura.
+- Patrones de datos.
+  Energy efficient hardware, SSD.
+  Elimina datos redundantes.
+  Usa sistemas de archivos compartidos
+  Respalda información cuando sea difícil de recrear
+- Patrones de Hardware.
+  Utiliza el hardware mínimo para atender tus necesidades.
+  Utiliza instancias con el menor impacto
+  Opotimiza el uso de GPUS
+- Patrones de desarrollo y deployment
+  Adopta métodos que introduzcan sutentablemente mejoras.
+  Manten tus cargas de trabajo actualizadas.
+  Incrementa la utilización de ambientes de construcción. Programa los periodos de disponibilidad para que coincidan con los horarios de trabajo de los miembros de trabajo.
+  
 
 
 * Footnotes
